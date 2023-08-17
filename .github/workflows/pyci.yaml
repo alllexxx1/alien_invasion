@@ -18,9 +18,9 @@ jobs:
           pip install poetry
           make install
       - name: Run linter
-        run: |
+        run:
           make lint
       - name: CI
         uses: paambaati/codeclimate-action@v3.2.0
-        env:
+        with:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
