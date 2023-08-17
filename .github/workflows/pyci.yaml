@@ -19,6 +19,7 @@ jobs:
       - name: Run linter
         run:
           make lint
+      - name: check
         uses: actions/checkout@v3
         with:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
