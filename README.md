@@ -1,1 +1,2 @@
+[![Actions Status](https://github.com/alllexxx1/alien_invasion/workflows/check/badge.svg)](https://github.com/alllexxx1/alien_invasion/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/4a1d6f9535532e679356/maintainability)](https://codeclimate.com/github/alllexxx1/alien_invasion/maintainability)

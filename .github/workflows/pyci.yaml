@@ -1,4 +1,4 @@
-name: CI
+name: check
 on:
   - push
   - pull_request
@@ -19,7 +19,6 @@ jobs:
       - name: Run linter
         run:
           make lint
-      - name: CI
         uses: actions/checkout@v3
         with:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
