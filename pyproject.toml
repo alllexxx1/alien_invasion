@@ -15,6 +15,7 @@ start-game = "alien_invasion.scripts.start_game:main"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.1.0"
+setuptools = "^68.1.0"
 
 [build-system]
 requires = ["poetry-core"]
