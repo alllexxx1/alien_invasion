@@ -3,8 +3,8 @@ from pygame.sprite import Sprite
 
 
 class Bullet(Sprite):
+    """"A bullet control class"""
     def __init__(self, game):
-        """"A bullet control class"""
         super().__init__()
         self.screen = game.screen
         self.settings = game.settings
