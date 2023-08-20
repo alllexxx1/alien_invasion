@@ -5,11 +5,12 @@ class Settings:
         self.screen_height = 950
         self.bg_color = (85, 206, 250)
         self.ship_speed = 1.7
-        self.bullet_speed = 1
+        self.ship_limit = 3
+        self.bullet_speed = 1.7
         self.bullet_width = 3
         self.bullet_height = 15
         self.bullet_color = (216, 31, 42)
         self.bullets_allowed = 3
-        self.alien_speed = 1.0
+        self.alien_speed = 2.0
         self.fleet_drop_speed = 10
         self.fleet_direction = 1
