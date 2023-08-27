@@ -1,7 +1,8 @@
 import pygame.font
 
 
-class Button():
+class Button:
+    """A class that creates the 'play' button"""
     def __init__(self, game, msg):
         self.screen = game.screen
         self.screen_rect = self.screen.get_rect()
