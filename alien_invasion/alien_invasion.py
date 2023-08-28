@@ -1,6 +1,7 @@
 import sys
 from time import sleep
 import pygame
+from pygame import mixer
 from alien_invasion.settings import Settings
 from alien_invasion.game_stats import GameStats
 from alien_invasion.ship import Ship
@@ -14,12 +15,22 @@ class AlienInvasion:
     """A class for managing resources and game behavior."""
     def __init__(self):
         pygame.init()
+        mixer.music.load('/home/aleksei/projects/alien_invasion'
+                         '/alien_invasion/music/background_music.wav')
+        mixer.music.play(-1)
+
         self.settings = Settings()
 
         self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
         self.settings.screen_width = self.screen.get_rect().width
         self.settings.screen_height = self.screen.get_rect().height
         pygame.display.set_caption('Alien Invasion')
+        # background_image = pygame.image.load('/home/aleksei/projects/'
+        #                                      'alien_invasion/alien_invasion'
+        #                                      '/images/background_image.png')
+        # self.background_image = pygame.transform.scale(
+        #     background_image, (self.settings.screen_width,
+        #                        self.settings.screen_height))
         self.stats = GameStats(self)
         self.sb = Scoreboard(self)
 
@@ -187,6 +198,7 @@ class AlienInvasion:
 
     def _update_screen(self):
         self.screen.fill(self.settings.bg_color)
+        # self.screen.blit(self.background_image, (0, 0))
         self.ship.blitme()
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
