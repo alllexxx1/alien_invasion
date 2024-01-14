@@ -4,7 +4,7 @@
 ---
 ## 👽 About the Project 👽
 
-Alien invasion is a copycat of the game that was popular once upon a time, in the early days of video games. Overall it has the same name.
+Alien invasion is a copycat of the game that was popular once upon a time, in the early days of video games. After all, it even has got the same name.
 
 ---
 
@@ -16,9 +16,7 @@ Alien invasion is a copycat of the game that was popular once upon a time, in th
 $ git clone git@github.com:alllexxx1/alien_invasion.git
 $ cd ./alien_invasion
 $ make install
-$ make build
-$ make package-install
-$ poetry run start-game
+$ start-game
 ```
 
 
@@ -33,7 +31,9 @@ $ poetry run start-game
 
 This project was built using these tools:
 
-| Tool                                                                        | Description                                            |
-|-----------------------------------------------------------------------------|--------------------------------------------------------|
-| [poetry](https://python-poetry.org/)                                        | "Python dependency management and packaging made easy" |
-| [flake8](https://flake8.pycqa.org/)                                         | "Your tool for style guide enforcement"                |
+| Tool                                  | Description                                              |
+|---------------------------------------|----------------------------------------------------------|
+| [pygame](https://www.pygame.org/news) | "Set of Python modules designed for writing video games" |
+| [poetry](https://python-poetry.org/)  | "Python dependency management and packaging made easy"   |
+| [flake8](https://flake8.pycqa.org/)   | "Your tool for style guide enforcement"                  |
+
